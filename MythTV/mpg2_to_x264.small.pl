@@ -325,6 +325,7 @@ my $extra = 'Copy';
 # The new recording file has no cutlist, so we don't insert that field
 #
 my @recKeys = grep(!/^cutlist$/, keys %$ref);
+my @recKeys = grep(!/^recordedid$/, keys %$ref);
 
 #
 # Build up the SQL insert command:
